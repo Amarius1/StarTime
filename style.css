@@ -107,6 +107,10 @@ body {
   height: 2570px; /* Used to enable scrolling */
   background: linear-gradient(180deg, #fafafa 0%, #fafafa 2%, #001028 30%, #000228 60%, #390742 90%);
 }
+.body-gradient3 {
+  height: 1000px; /* Used to enable scrolling */
+	background-image: linear-gradient(to bottom, #fafafa, #fafafa, #fafafa, #c1bad7, #8e7db3, #5f428d, #310066);
+}
 .scroll-downs {
   position: absolute;
   top: 86%;
