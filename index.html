@@ -16,32 +16,59 @@
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
 	<link href="style.css" type="text/css" rel="stylesheet">
-	<script>
-	 $(function() {
-        $('div').delay(1000).fadeOut(400);
-        $.scrollSpeed(100, 800);
-    });
-    </script>
 </head>
 
 <body>
 
 
-
+<!--parallax stuff-->
 <div id="container">
-
 	<div class="shape2"></div>
-	<div class="shape1"><H1 style="position:relative; top: 120px;" class="font1 center white-text">Star Time</H1></div>
-
-	
+	<div class="shape1"><H5 style="position:relative; top: 100px;" class="font1 center white-text">It's</H5><H1 style="position:relative; top: 70px;" class="font1 center white-text">Star Time!</H1></div>	
 </div>
-	
-	<H3  data-aos="fade-down" class="title0 center font1 grey-text text-lighten-2">Welcome to Star Time, the best place to find more about your favourite rocket launches and more, much more.</H3>
 
+<!--introduction-->	
+<H3 data-aos="fade-down" class="title0 center font1 grey-text text-lighten-2">Welcome to Star Time, the best place to find more about your favourite rocket launches and more, much more.</H3>
+
+	
+	
+<!--mouse icon-->
 <div class="scroll-downs">
-  <div class="mousey">
-    <div class="scroller"></div>
-  </div>
+	<div class="mousey">
+		<div class="scroller"></div>
+	</div>
+</div>
+
+<!--side buttons-->
+ <a class="down btn-floating btn waves-effect waves-light white"><i class="grey-text text-darken-4 material-icons">expand_less</i></a>
+  <a href="#start" class="down2 btn-floating btn waves-effect waves-light white"><i class="grey-text text-darken-4 material-icons">expand_more</i></a>
+
+  
+  
+  <!--Primus gateway-->
+<div class="navbarx">
+ <nav class="transparent z-depth-0">
+    <div class="nav-wrapper">
+      <a style="position:relative; left: 8px;" class="font1 transparentb brand-logo">Star Time</a>
+      <ul style="position: relative; right: 5px; top: 1px; height: 47px;" class="transparentb rounded z-depth-4 right hide-on-med-and-down">
+        <li><a style="height: 50px;" class="mono grey lighten-4 waves-ripple waves-effect waves-blue rounded-left grey-text text-darken-4" href="Schedule.html">Schedule</a></li>
+        <li><a style="height: 50px;" class="mono grey lighten-4 waves-ripple waves-effect waves-blue grey-text text-darken-4" href="Companies.html">Companies</a></li>
+		<li><a style="height: 50px;" class="mono grey lighten-4 waves-ripple waves-effect waves-blue grey-text text-darken-4" href="Rockets.html">Rockets</a></li>
+        <li><a style="height: 50px;" class="mono grey lighten-4 waves-ripple waves-effect waves-blue rounded-right grey-text text-darken-4" href="More.html">More</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<div id="start" class="introduction-card">
+
+<img src="Ariane.png" width="700" class="card01-media"> 
+<div class="card-panel rounded card01">
+    <span class="blue-text grey-text text-darken-4">Do you love space? 
+	
+	</span>
+</div>
+            
 </div>
 <!--preloader-->
 		<div class="preloader-background">
@@ -62,7 +89,7 @@
 	
 
 
-	
+<!--scripts-->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js'></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
