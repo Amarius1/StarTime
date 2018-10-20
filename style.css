@@ -1,5 +1,5 @@
 nav {
-    height: 55px;
+    height: 60px;
     line-height: 55px;
 }
 
@@ -99,9 +99,13 @@ body {
     background-image: linear-gradient(to right top, #730068, #670c73, #56177d, #3d2087, #042890);
       border-radius: 30% 40% 70% 30% / 40% 60% 40% 60%;
     }
-	body {
+.body-gradient1 {
   height: 2870px; /* Used to enable scrolling */
   background: linear-gradient(180deg, #3a0044 0%, #001028 5%, #000228 10%, #001e4c 30%, #7da4ce 51%, #fafafa 85%);
+}
+.body-gradient2 {
+  height: 2570px; /* Used to enable scrolling */
+  background: linear-gradient(180deg, #fafafa 0%, #fafafa 2%, #001028 30%, #000228 60%, #390742 90%);
 }
 .scroll-downs {
   position: absolute;
@@ -163,6 +167,7 @@ body {
 {
 	transition: all 0.3s;
 	opacity: 0;
+	pointer-events: none;
 	
 }
 .visible
@@ -175,6 +180,7 @@ body {
 	filter: blur(8px);
 	-webkit-filter: blur(8px);
 	transition: all 0.5s;
+	pointer-events: none;
 }
 //stars
 .star {
@@ -262,4 +268,82 @@ body {
 	height: 47px;
 	width: 140px;
 	border-radius: 25px 25px 25px 25px;"
+}
+/*Ariane*/
+.ariane-place {
+	position: absolute;
+	top: 100%; 
+	left: 38%;
+}
+.visiblex {
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.4s;
+}
+/*Payload*/
+.payload-btn {
+	position: relative;
+	top: -500px;
+	left: -25%;
+	z-index: 995;
+}
+.ariane-payload {
+	position: relative;
+	top: -490px;
+	left: -23%;
+	z-index: 996;
+	transition: all 0.4;
+}
+.card03 {
+	position: absolute;
+	top: 150px;
+	left: -60%;
+	z-index: 996;
+	transition: all 0.4;
+	width:400px;
+}
+/*Tank*/
+.tank-btn {
+	position: relative;
+	top: 0px;
+	left: -53%;
+	z-index: 995;
+}
+.card04 {
+	position: absolute;
+	top: 680px;
+	left: -63%;
+	z-index: 996;
+	transition: all 0.4;
+	width:400px;
+}
+.ariane-tank {
+	position: absolute;
+	top: 480px;
+	left: 60%;
+	z-index: 996;
+	transition: all 0.4;
+}
+/*Boosters*/
+.boosters-btn {
+	position: relative;
+	top: 100px;
+	left: -29.5%;
+	z-index: 995;
+}
+.card05 {
+	position: absolute;
+	top: 780px;
+	left: -63%;
+	z-index: 996;
+	transition: all 0.4;
+	width:400px;
+}
+.ariane-boosters {
+	position: absolute;
+	top: 580px;
+	left: 40%;
+	z-index: 996;
+	transition: all 0.4;
+	z-index: 993;
 }
