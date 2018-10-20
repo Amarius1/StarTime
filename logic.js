@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(){
-	$('.preloader-background').delay(300).fadeOut('slow');
+	$("#load-wrapper").delay(700).fadeOut('slow');
 	
-	$('.preloader-wrapper')
+	$("#loader")
 		.delay(300)
 		.fadeOut();
 });
@@ -27,7 +27,7 @@ var pxlCount = 0
 $(window).on('scroll', function () {
     pxlCount = $(document).scrollTop()/30;
   	$('p.pxlCount > span').text(pxlCount);
-    $(".shape1, .shape2, .scroll-downs").css({"-webkit-filter": "blur("+pxlCount+"px)","-moz-filter": "blur("+pxlCount+"px)","filter": "blur("+pxlCount+"px)" })     
+    $(".shape1, .shape2, .scroll-downs, .btn-flat").css({"-webkit-filter": "blur("+pxlCount+"px)","-moz-filter": "blur("+pxlCount+"px)","filter": "blur("+pxlCount+"px)" })     
 });
 $(function() {
     var a = $(".transparentb");
@@ -44,6 +44,34 @@ $(function() {
         }
     });
 });
+$(function() {
+    var div = $(".card-main0");
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+    
+        if (scroll >= 1800) {
+            div.addClass("blur");
+			 
+        } else {
+            div.removeClass("blur");
+        }
+    });
+});
+$(function() {
+    var div = $(".card-main1");
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+    
+        if (scroll >= 2100) {
+            div.addClass("blur");
+			 
+        } else {
+            div.removeClass("blur");
+        }
+    });
+});
+
+
 
 
 for (var i = 0; i < 100; i++) {
@@ -66,7 +94,7 @@ $(document).ready(function(){
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 800, function(){
+      }, 300, function(){
    
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
