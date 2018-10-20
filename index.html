@@ -16,6 +16,7 @@
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
 	<link href="style.css" type="text/css" rel="stylesheet">
+	<link href="preloader.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
@@ -30,8 +31,12 @@
 <!--introduction-->	
 <H3 data-aos="fade-down" class="title0 center font1 grey-text text-lighten-2">Welcome to Star Time, the best place to find more about your favourite rocket launches and more, much more.</H3>
 
-	
-	
+<!--direct buttons-->
+<div class="center-all">
+<a href="Schedule.html" style="position: relative; top: -150px; left: -7%;" class="waves-effect waves-light btn-flat white-text center-all font1 md-button"><H5>Launches</H5></a>
+<a href="#start" style="position: relative; top: -150px; left: 7%;" class="waves-effect waves-light btn-flat white-text center-all font1 md-button"><H5>More</H5></a>
+
+</div>
 <!--mouse icon-->
 <div class="scroll-downs">
 	<div class="mousey">
@@ -39,51 +44,80 @@
 	</div>
 </div>
 
-<!--side buttons-->
- <a class="down btn-floating btn waves-effect waves-light white"><i class="grey-text text-darken-4 material-icons">expand_less</i></a>
-  <a href="#start" class="down2 btn-floating btn waves-effect waves-light white"><i class="grey-text text-darken-4 material-icons">expand_more</i></a>
-
-  
-  
-  <!--Primus gateway-->
+<!--Primus gateway-->
 <div class="navbarx">
  <nav class="transparent z-depth-0">
     <div class="nav-wrapper">
       <a style="position:relative; left: 8px;" class="font1 transparentb brand-logo">Star Time</a>
       <ul style="position: relative; right: 5px; top: 1px; height: 47px;" class="transparentb rounded z-depth-4 right hide-on-med-and-down">
-        <li><a style="height: 50px;" class="mono grey lighten-4 waves-ripple waves-effect waves-blue rounded-left grey-text text-darken-4" href="Schedule.html">Schedule</a></li>
+        <li><a style="height: 50px;" class="mono grey lighten-4 waves-ripple waves-effect waves-blue rounded-left grey-text text-darken-4" href="Schedule.html">Launches</a></li>
         <li><a style="height: 50px;" class="mono grey lighten-4 waves-ripple waves-effect waves-blue grey-text text-darken-4" href="Companies.html">Companies</a></li>
 		<li><a style="height: 50px;" class="mono grey lighten-4 waves-ripple waves-effect waves-blue grey-text text-darken-4" href="Rockets.html">Rockets</a></li>
-        <li><a style="height: 50px;" class="mono grey lighten-4 waves-ripple waves-effect waves-blue rounded-right grey-text text-darken-4" href="More.html">More</a></li>
+        <li><a style="height: 50px;" class="mono grey lighten-4 waves-ripple waves-effect waves-blue rounded-right grey-text text-darken-4" href="Missions.html">Missions</a></li>
       </ul>
     </div>
   </nav>
 </div>
 
-<div id="start" class="introduction-card">
-
-<img src="Ariane.png" width="700" class="card01-media"> 
-<div class="card-panel rounded card01">
-    <span class="blue-text grey-text text-darken-4">Do you love space? 
-	
-	</span>
+<!--card1-->
+<div id="start" class="card-main0">
+	<img data-aos="fade-up-right" style="position:relative; top: 100px;" src="Ariane.png" width="700">
+	<div data-aos="fade-up" class="card-panel rounded card01">
+		<span  class="mono blue-text grey-text text-darken-4">Do you love space and rockets? Have you ever wondered when the next rocket launch is? Then you've come to the right place. Space Time has you covered.
+		</span>
+	</div>     
 </div>
-            
-</div>
-<!--preloader-->
-		<div class="preloader-background">
-		<div class="preloader-wrapper big active">
-			<div class="spinner-layer spinner-blue-only">
-				<div class="circle-clipper left">
-					<div class="circle"></div>
-				</div><div class="gap-patch">
-					<div class="circle"></div>
-				</div><div class="circle-clipper right">
-					<div class="circle"></div>
-				</div>
-			</div>
-		</div>     
+<!--card2-->
+<div class="card-main1">
+	<div data-aos="fade-up" class="card-panel rounded card02">
+		<span class="mono blue-text grey-text text-darken-4">Learn more about past missions and the achievements that helped shape the modern space industry.  
+		</span>
 	</div>
+	<img data-aos="fade-up-left" style="position:absolute; top: 100px; right: 0px;" src="Rosetta.png" width="700">
+</div>
+
+<!--footer-->
+<footer style="position:absolute; top: 2800px; width:100%" class="page-footer grey lighten-5 ">
+    <div class="container ">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="grey-text text-darken-4 font1"><b>Space Time</b></h5>
+                <p class="grey-text text-darken-4 mono">A website dedicated to collecting information about spacecraft and missions in an elegant way.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="grey-text text-darken-4 font1"><b>Links</b></h5>
+                <ul class="mono">
+					<li><a class="grey-text text-darken-4" href="https://materializecss.com/">Materialize</a></li>
+					<li><a class="grey-text text-darken-4" href="https://launchlibrary.net/">Launch Library</a></li>
+					<li><a class="grey-text text-darken-4" href="https://vuejs.org/">Vue.js</a></li>
+					<li><a class="grey-text text-darken-4" href="https://michalsnik.github.io/aos/">AOS</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container grey-text text-darken-4 font1">
+        <b>Contact</b>
+        <a class="grey-text text-darken-4 font1 right" href="https://2018.spaceappschallenge.org/"><b>Space Apps 2018</b></a>
+		 
+		</div>
+	</div>
+</footer>
+            
+<!--preloader-->
+
+<div class="center-all" id="load-wrapper">
+  <div class="center-all" id="loader">
+    <span class="ringFour"></span>
+    <span class="ringThree"></span>
+    <span class="colorRing"></span>
+    <span class="ringTwo"></span>
+   
+  </div>
+</div>
+
+
+
 
 
 	
