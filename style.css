@@ -77,6 +77,10 @@ body {
 {
 	font-family: 'Comfortaa', cursive;
 }
+.font2
+{
+	font-family: 'Roboto', sans-serif;
+}
  
 #container {
   position: relative;
@@ -457,25 +461,6 @@ html{
 	--text-color: #707070;
 	--radius: 13px;
 	--shadow: 0 3px 20px rgba(0,0,0, .1);
-}
-
-.btn-main:hover{
-	background:var(--color-2);
-}
-
-
-.hero{
-	background: var(--gradient-1);
-	min-height: 60vh;
-	display: flex;
-}
-
-.hero span{
-	font-size: 10vw;
-	font-weight: 900;
-	margin: auto;
-	text-align: center;
-	filter: drop-shadow(0px 3px 1px rgba(0,0,0,.3));
 }
 
 .launches-wrapper{
