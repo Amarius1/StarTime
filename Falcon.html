@@ -19,93 +19,83 @@
 	<link href="preloader.css" type="text/css" rel="stylesheet">
 </head>
 
-<body class="body-gradient3">
+<body class="body-gradient2">
 
-<!--Arcturus gateway-->
+<!--Apollo gateway-->
  <div style="z-index: 999;"class="navbar-fixed">
     <nav class="z-depth-0">
       <div class="nav-wrapper grey lighten-5 ">
-        <a href="index.html" id="headx" style="position:relative; left: 8px; top: 2px;" class="brand-logo"><img src="Logo.png" width="158"></a>
+         <a href="index.html" id="headx" style="position:relative; left: 8px; top: 2px;" class="brand-logo"><img src="Logo.png" width="158"></a>
         <ul style="position: relative; right: 5px; top: 7px; height: 45px;" class="rounded z-depth-0 right hide-on-med-and-down">
-        <li><a style="position: relative; top: -5px; height: 50px;" class="mono grey lighten-3 waves-ripple waves-effect waves-blue rounded-left grey-text text-darken-4" href="launches.html">Launches</a></li>
+        <li><a style="position: relative; top: -5px; height: 50px;" class="mono grey lighten-3 waves-ripple waves-effect waves-blue rounded-left grey-text text-darken-4" href="Schedule.html">Launches</a></li>
         <li><a style="position: relative; top: -5px; height: 50px;" class="mono grey lighten-3 waves-ripple waves-effect waves-blue grey-text text-darken-4" href="Companies.html">Companies</a></li>
-		<li><a style="position: relative; top: -2px; height: 50px;" class="mono grey lighten-2 grey-text text-darken-4">Rockets</a></li>
+		<li><a style="position: relative; top: -5px; height: 50px;" class="mono grey lighten-3 waves-ripple waves-effect waves-blue grey-text text-darken-4" href="Rockets.html">Rockets</a></li>
         <li><a style="position: relative; top: -5px;height: 50px;" class="mono grey lighten-3 waves-ripple waves-effect waves-blue rounded-right grey-text text-darken-4" href="Missions.html">Missions</a></li>
 		</ul>
       </div>
     </nav>
   </div>
+	<!--Title-->
+	<H1 id="title2" style="position:absolute; top: 170px; left: 33%;" class="font1"><a href="#ariane" class="nohyper" >Falcon 9 Block 5</a></H1>
+	<div id="title2" style="position:absolute; top: 280px; left: 30%;">
+		<div class="chip mono hoverable">
+		Payload to GTO: <b>8.3t</b>
+		</div>
+		<div class="chip mono hoverable">
+		Payload to LEO: <b>22.8t</b>
+		</div>
+		<div class="chip mono hoverable">
+		Mass: <b>550t</b>
+		</div>
+		<div class="chip mono hoverable">
+		Height:  <b>71m</b>
+		</div>
+	</div>
+	<div class="falcon-place center-all">
+	<!--action buttons-->
+	<img id="ariane" src="Falcon/Falcon.png" height="100%">
+	<a id="payload" class="payload1-btn btn-floating btn-large white waves-ripple waves-effect waves-blue"><i class="material-icons grey-text text-darken-4">search</i></a>
+	<a id="tank" class="tank1-btn btn-floating btn-large white waves-ripple waves-effect waves-blue"><i class="material-icons grey-text text-darken-4">search</i></a>	
+	<a id="boosters" class="tank2-btn btn-floating btn-large white waves-ripple waves-effect waves-blue"><i class="material-icons grey-text text-darken-4">search</i></a>	
 	
-    <div class="card-pos row">
-		<!--ariane-->
-		<div class="col s1 m3">
-		  <div class="card-pos card rounded">
-			<div class="card-image">
-			  <img style="border-radius: 15px 15px 15px 15px;" src="http://www.biznesinfo.az/images/ckeditor/image/AzerSpace.jpg">
-			  <span class="card-title mono">Ariane 5</span>
-			</div>
-			<div class="card-content">
-			  <p class="font1">The Ariane 5 is a commercial launch system developed by Arianespace for the European Space Agency.</p>
-			</div>
-			<div style="position:relative; bottom: 5px; left: 5px;">
-			<a href="Ariane.html" style="text-transform: capitalize;" class="grey lighten-3 waves-ripple waves-effect waves-blue btn btn-rounded blue-text text-darken-3 z-depth-0 mono">Learn More</a>
-			</div>
-		  </div>
+	
+	<!--payload pannel-->
+	
+	<div id="payload-cut" class="falcon-payload visiblex"><img class="materialboxed" src="Falcon/Payload.png"></div>
+	<div id="payload-data" class="card-panel rounded card06 visiblex">
+		<span class="mono blue-text grey-text text-darken-4">This is the payload section of the Falcon 9 rocket. While launching satellites it has Fairing around them to protect them from the aerodynamic forces. During ISS resupply flights it hosts the Dragon space craft that carries supplies and experiments to the station.		</span>
+	</div>
+	<!--tank pannel-->
+	
+	<div id="tank-cut" class="falcon-tank visiblex"><img class="materialboxed" src="Falcon/Tank.png"></div>
+	<div id="tank-data" class="card-panel rounded card07 visiblex">
+		<span class="mono blue-text grey-text text-darken-4">The Falcon 9 fuel tank is what fuels the 9 Merlin engines that help the rocket reach orbit. Attached at the top there are 4 titanium grid fins that help during the vertical landing procedures.</span>	
 		</div>
-		<!--falcon-->
-		<div class="col s1 m3">
-		  <div style="height:410px;" class="card-pos card rounded">
-			<div class="card-image">
-			  <img style="border-radius: 15px 15px 15px 15px;" src="https://images.labroots.com/content_article_profile_image_3fc1d8e8dbf5f48a284ce690bdd78c27411519ab_2908.png">
-			  <span class="card-title mono">Falcon 9 Block 5</span>
-			</div>
-			<div class="card-content">
-			  <p class="font1">The Falcon 9 is a reusable commercial launch system developed by SpaceX for a multitude of mission types.</p>
-			</div>
-			<div style="position:relative; bottom: 15px; left: 5px;">
-			<a href="Falcon.html" style="text-transform: capitalize;" class="grey lighten-3 waves-ripple waves-effect waves-blue btn btn-rounded blue-text text-darken-3 z-depth-0 mono">Learn More</a>
-			</div>
-		  </div>
-		</div>
-		<!--Fheavy-->
-		<div class="col s1 m3">
-		  <div style="height:410px;" class="card-pos card rounded">
-			<div class="card-image">
-			  <img style="border-radius: 15px 15px 15px 15px;" src="FHeavy.png">
-			  <span class="card-title mono">Falcon Heavy</span>
-			</div>
-			<div class="card-content">
-			  <p class="font1">What do you get when you strap together 3 Falcon 9 rockets? The Falcon Heavy is a commercial super-heavy launch system developed by SpaceX.</p>
-			</div>
-			<div style="position:relative; bottom: 0px; left: 5px;">
-			<a href="FHeavy.html" style="text-transform: capitalize;" class="grey lighten-3 waves-ripple waves-effect waves-blue btn btn-rounded blue-text text-darken-3 z-depth-0 mono">Learn More</a>
-			</div>
-		  </div>
-		</div>
-		<!--Dheavy-->
-		<div class="col s1 m3">
-		  <div style="height:410px;" class="card-pos card rounded">
-			<div class="card-image">
-				<img style="border-radius: 15px 15px 15px 15px;" src="Delta4.png">
-			  <span class="card-title mono">Delta IV Heavy</span>
-			</div>
-			<div class="card-content">
-			  <p class="font1">The Delta IV Heavy is a commercial super-heavy launch system developed by United Launch Alliance.</p>
-			</div>
-			<div style="position:relative; bottom: 5px; left: 5px;">
-			<a href="https://en.wikipedia.org/wiki/Delta_IV_Heavy" style="text-transform: capitalize;" class="grey lighten-3 waves-ripple waves-effect waves-blue btn btn-rounded blue-text text-darken-3 z-depth-0 mono">Learn More</a>
-			</div>
-		  </div>
-		</div>
-		
-	 
-	 
-    </div>
-          
+	
+	
+	<!--legs pannel-->
+	
+	<div id="boosters-cut" class="falcon-legs visiblex"><img src="Falcon/Legs.png"></div>
+	<div id="boosters-cut2" class="falcon-legs-extended visiblex"><img class="rounded materialboxed" src="Falcon/Legs-extended.png"></div>
+	<div id="boosters-data" class="card-panel rounded card08 visiblex">
+		<span class="mono blue-text grey-text text-darken-4">At the bottom of the main fuel tank of the Falcon 9 there are 4 legs attached that are deployed just before the landing procedure.	</span>
+	</div>
+	</div>
+	
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
 
 <!--footer-->
-<footer style="position:absolute; top: 1000px; width:100%" class="page-footer grey lighten-5 ">
+<footer style="position:absolute; top: 2570px; width:100%" class="page-footer grey lighten-5 ">
     <div class="container ">
         <div class="row">
             <div class="col l6 s12">

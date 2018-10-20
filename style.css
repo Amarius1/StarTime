@@ -109,11 +109,14 @@ body {
 }
 .body-gradient2 {
   height: 2570px; /* Used to enable scrolling */
-  background: linear-gradient(180deg, #fafafa 0%, #fafafa 2%, #001028 30%, #000228 60%, #390742 90%);
+  background: linear-gradient(180deg, #fafafa 0%, #fafafa 3%, #001028 30%, #000228 60%, #390742 90%);
 }
 .body-gradient3 {
   height: 1000px; /* Used to enable scrolling */
 	background-image: linear-gradient(to bottom, #fafafa, #fafafa, #fafafa, #c1bad7, #8e7db3, #5f428d, #310066);
+}
+.body-gradient4 {
+	background-image: linear-gradient(to bottom, #fafafa, #fafafa, #a58efd, #a58efd, #7856f8, #3e00ee, #3e00ee);
 }
 .scroll-downs {
   position: absolute;
@@ -277,6 +280,18 @@ body {
 	width: 140px;
 	border-radius: 25px 25px 25px 25px;"
 }
+.card-pos {
+	position: relative;
+	top: 4%;
+	opacity: 0.93;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating)
+{
+    color: #1e88e5 !important ;
+    margin-right: 20px !important ;
+    transition: color .3s ease !important ;
+    text-transform: capitalize !important ;
+}
 /*Ariane*/
 .ariane-place {
 	position: absolute;
@@ -355,15 +370,192 @@ body {
 	transition: all 0.4;
 	z-index: 993;
 }
-.card-pos {
+/*Falcon9*/
+.falcon-place {
+	position: absolute;
+	top: 100%; 
+	left: 46%;
+}
+/*Payload*/
+.payload1-btn {
 	position: relative;
-	top: 4%;
-	opacity: 0.93;
+	top: -550px;
+	left: -38%;
+	z-index: 995;
 }
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating)
-{
-    color: #1e88e5 !important ;
-    margin-right: 20px !important ;
-    transition: color .3s ease !important ;
-    text-transform: capitalize !important ;
+.falcon-payload {
+	position: absolute;
+	top: 0px;
+	left: 80%;
+	z-index: 996;
+	transition: all 0.4;
 }
+.card06 {
+	position: absolute;
+	top: 120px;
+	left: -200%;
+	z-index: 996;
+	transition: all 0.4;
+	width:400px;
+}
+/*Tank*/
+.tank1-btn {
+	position: relative;
+	top: -55px;
+	left: -62%;
+	z-index: 995;
+}
+.card07 {
+	position: absolute;
+	top: 620px;
+	left: -200%;
+	z-index: 996;
+	transition: all 0.4;
+	width:400px;
+}
+.falcon-tank {
+	position: absolute;
+	top: 580px;
+	left: 80%;
+	z-index: 996;
+	transition: all 0.4;
+}
+/*Legs*/
+.tank2-btn {
+	position: absolute;
+	top: 1200px;
+	left: 13.5%;
+	z-index: 995;
+}
+.card08 {
+	position: absolute;
+	top: 1150px;
+	left: -200%;
+	z-index: 995;
+	transition: all 0.4;
+	width:400px;
+}
+.falcon-legs {
+	position: absolute;
+	top: 1070px;
+	left: 80%;
+	z-index: 996;
+	transition: all 0.4;
+}
+.falcon-legs-extended {
+	position: absolute;
+	top: 1070px;
+	left: 140%;
+	z-index: 996;
+	transition: all 0.4;
+}
+html{
+	padding: 0;
+	margin: 0;
+	
+	--default-padding: 16px;
+	--text-color: #707070;
+	--radius: 13px;
+	--shadow: 0 3px 20px rgba(0,0,0, .1);
+}
+
+.btn-main:hover{
+	background:var(--color-2);
+}
+
+
+.hero{
+	background: var(--gradient-1);
+	min-height: 60vh;
+	display: flex;
+}
+
+.hero span{
+	font-size: 10vw;
+	font-weight: 900;
+	margin: auto;
+	text-align: center;
+	filter: drop-shadow(0px 3px 1px rgba(0,0,0,.3));
+}
+
+.launches-wrapper{
+	max-width: 1140px;
+	padding: 0 var(--default-padding);
+	margin: -16vh auto 0 auto;
+}
+
+.launch{
+	z-index: 10;
+	position: relative;
+	padding: var(--default-padding);
+	margin-bottom: calc(var(--default-padding) * 2);
+	background: #fff;
+	border-radius: var(--radius);
+	box-shadow: var(--shadow);
+	display: grid;
+	align-items: center;
+	grid-template-columns: 30% 1fr;
+	grid-template-rows: auto;
+	grid-gap: var(--default-padding);
+}
+
+.launch::after{
+	position: absolute;
+	content: '';
+	top: -4px;
+	right: -4px;
+	bottom: -4px;
+	left: -4px;
+	z-index: -1;
+	border: 4px solid var(--color-2);
+	border-radius: 7px;
+	opacity: 0;
+	transform: scale(1.1);
+	transition: .2s all ease-in-out;
+}
+
+.launch:hover::after{
+	opacity: 1;
+	transform: scale(1);
+}
+
+.launch .launch-image{
+	width: 100%;
+	height: 350px;
+}
+
+.launch .launch-image img{
+	object-fit: cover;
+	object-position: center;
+	width: 100%;
+	height: 100%;
+	border-radius: 3px;
+}
+
+.launch .launch-info>*:not(a){
+	display: block;
+	margin: 0;
+	padding: 4px 0;
+	font-weight: 600;
+}
+
+.launch .launch-info i{
+	color: var(--color-1);
+	margin-right: 8px;
+}
+
+.launch .launch-info .launch-date{
+	margin-top: var(--default-padding);
+	border-top: 1px solid #ddd;
+}
+
+.launch .launch-info .launch-location{
+	margin-bottom: var(--default-padding);
+	border-bottom: 1px solid #ddd;
+}
+
+.launch .launch-info .launch-text{
+	margin-bottom: var(--default-padding);
+}
+
+

@@ -110,6 +110,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     $("#boosters").click(function(){
         $("#boosters-cut").toggleClass("visiblex");
+		$("#boosters-cut2").toggleClass("visiblex");
 		$("#boosters-data").toggleClass("visiblex");
 		$("#ariane").toggleClass("blur");
 		$("#tank").toggleClass("blur");

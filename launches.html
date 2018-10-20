@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" >
-
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Star Time</title>
-	
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Star Time</title>
 	<link rel="icon" href="https://images.vexels.com/media/users/3/145821/isolated/preview/44247e29bf035ece825b8b2bf8af88c2-ilustra--o-do-foguete-da-ilustra--o-do-foguete-by-vexels.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css'>
@@ -16,96 +16,60 @@
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link href='https://fonts.googleapis.com/css?family=Product+Sans' rel='stylesheet' type='text/css'>
 	<link href="style.css" type="text/css" rel="stylesheet">
-	<link href="preloader.css" type="text/css" rel="stylesheet">
-</head>
-
-<body class="body-gradient3">
-
-<!--Arcturus gateway-->
- <div style="z-index: 999;"class="navbar-fixed">
+	<link href="preloader.css" type="text/css" rel="stylesheet"> 
+	<style>
+	::-webkit-scrollbar {
+			 display: flex; 
+			width: 7px;
+		}
+		/* Track */
+		::-webkit-scrollbar-track {
+			background: #ffffff; 
+		}
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+			background: #bdbdbd; 
+		}
+		/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+			background: #757575; 
+		}
+		.unselectable {
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+	</style>
+	</head>
+<body class="body-gradient4">
+	<!--Arcturus gateway-->
+ <div style="z-index: 999;" class="navbar-fixed">
     <nav class="z-depth-0">
       <div class="nav-wrapper grey lighten-5 ">
         <a href="index.html" id="headx" style="position:relative; left: 8px; top: 2px;" class="brand-logo"><img src="Logo.png" width="158"></a>
         <ul style="position: relative; right: 5px; top: 7px; height: 45px;" class="rounded z-depth-0 right hide-on-med-and-down">
-        <li><a style="position: relative; top: -5px; height: 50px;" class="mono grey lighten-3 waves-ripple waves-effect waves-blue rounded-left grey-text text-darken-4" href="launches.html">Launches</a></li>
+        <li><a style="position: relative; top: -3px; height: 50px;" class="mono grey lighten-2 rounded-left grey-text text-darken-4">Launches</a></li>
         <li><a style="position: relative; top: -5px; height: 50px;" class="mono grey lighten-3 waves-ripple waves-effect waves-blue grey-text text-darken-4" href="Companies.html">Companies</a></li>
-		<li><a style="position: relative; top: -2px; height: 50px;" class="mono grey lighten-2 grey-text text-darken-4">Rockets</a></li>
+		<li><a style="position: relative; top: -5px; height: 50px;" class="mono grey lighten-3 waves-ripple waves-effect waves-blue grey-text text-darken-4" href="Rockets.html">Rockets</a></li>
         <li><a style="position: relative; top: -5px;height: 50px;" class="mono grey lighten-3 waves-ripple waves-effect waves-blue rounded-right grey-text text-darken-4" href="Missions.html">Missions</a></li>
 		</ul>
       </div>
     </nav>
   </div>
 	
-    <div class="card-pos row">
-		<!--ariane-->
-		<div class="col s1 m3">
-		  <div class="card-pos card rounded">
-			<div class="card-image">
-			  <img style="border-radius: 15px 15px 15px 15px;" src="http://www.biznesinfo.az/images/ckeditor/image/AzerSpace.jpg">
-			  <span class="card-title mono">Ariane 5</span>
-			</div>
-			<div class="card-content">
-			  <p class="font1">The Ariane 5 is a commercial launch system developed by Arianespace for the European Space Agency.</p>
-			</div>
-			<div style="position:relative; bottom: 5px; left: 5px;">
-			<a href="Ariane.html" style="text-transform: capitalize;" class="grey lighten-3 waves-ripple waves-effect waves-blue btn btn-rounded blue-text text-darken-3 z-depth-0 mono">Learn More</a>
-			</div>
-		  </div>
-		</div>
-		<!--falcon-->
-		<div class="col s1 m3">
-		  <div style="height:410px;" class="card-pos card rounded">
-			<div class="card-image">
-			  <img style="border-radius: 15px 15px 15px 15px;" src="https://images.labroots.com/content_article_profile_image_3fc1d8e8dbf5f48a284ce690bdd78c27411519ab_2908.png">
-			  <span class="card-title mono">Falcon 9 Block 5</span>
-			</div>
-			<div class="card-content">
-			  <p class="font1">The Falcon 9 is a reusable commercial launch system developed by SpaceX for a multitude of mission types.</p>
-			</div>
-			<div style="position:relative; bottom: 15px; left: 5px;">
-			<a href="Falcon.html" style="text-transform: capitalize;" class="grey lighten-3 waves-ripple waves-effect waves-blue btn btn-rounded blue-text text-darken-3 z-depth-0 mono">Learn More</a>
-			</div>
-		  </div>
-		</div>
-		<!--Fheavy-->
-		<div class="col s1 m3">
-		  <div style="height:410px;" class="card-pos card rounded">
-			<div class="card-image">
-			  <img style="border-radius: 15px 15px 15px 15px;" src="FHeavy.png">
-			  <span class="card-title mono">Falcon Heavy</span>
-			</div>
-			<div class="card-content">
-			  <p class="font1">What do you get when you strap together 3 Falcon 9 rockets? The Falcon Heavy is a commercial super-heavy launch system developed by SpaceX.</p>
-			</div>
-			<div style="position:relative; bottom: 0px; left: 5px;">
-			<a href="FHeavy.html" style="text-transform: capitalize;" class="grey lighten-3 waves-ripple waves-effect waves-blue btn btn-rounded blue-text text-darken-3 z-depth-0 mono">Learn More</a>
-			</div>
-		  </div>
-		</div>
-		<!--Dheavy-->
-		<div class="col s1 m3">
-		  <div style="height:410px;" class="card-pos card rounded">
-			<div class="card-image">
-				<img style="border-radius: 15px 15px 15px 15px;" src="Delta4.png">
-			  <span class="card-title mono">Delta IV Heavy</span>
-			</div>
-			<div class="card-content">
-			  <p class="font1">The Delta IV Heavy is a commercial super-heavy launch system developed by United Launch Alliance.</p>
-			</div>
-			<div style="position:relative; bottom: 5px; left: 5px;">
-			<a href="https://en.wikipedia.org/wiki/Delta_IV_Heavy" style="text-transform: capitalize;" class="grey lighten-3 waves-ripple waves-effect waves-blue btn btn-rounded blue-text text-darken-3 z-depth-0 mono">Learn More</a>
-			</div>
-		  </div>
-		</div>
-		
-	 
-	 
-    </div>
-          
+	<div class="hero grey-text text-darken-4">
+		<span>Launches</span>
+	</div>
+	<div class="launches-wrapper">
 
-
+	</div>
+	
+	
 <!--footer-->
-<footer style="position:absolute; top: 1000px; width:100%" class="page-footer grey lighten-5 ">
+<footer class="page-footer grey lighten-5 ">
     <div class="container ">
         <div class="row">
             <div class="col l6 s12">
@@ -153,11 +117,6 @@
 
 
 
-
-
-	
-
-
 <!--scripts-->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js'></script>
@@ -168,6 +127,7 @@
 <script src="logic.js"></script>
 
 
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="launches.js"></script>
 </body>
-
 </html>
