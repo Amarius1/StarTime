@@ -15,6 +15,10 @@ nav {
 { 
 	border-radius: 15px 15px 15px 15px;"
 }
+.btn-rounded
+{ 
+	border-radius: 9px 9px 9px 9px;"
+}
 .mono
 {
 	font-family: 'Roboto Mono', monospace;
@@ -350,4 +354,16 @@ body {
 	z-index: 996;
 	transition: all 0.4;
 	z-index: 993;
+}
+.card-pos {
+	position: relative;
+	top: 4%;
+	opacity: 0.93;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating)
+{
+    color: #1e88e5 !important ;
+    margin-right: 20px !important ;
+    transition: color .3s ease !important ;
+    text-transform: capitalize !important ;
 }

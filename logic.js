@@ -27,7 +27,7 @@ var pxlCount = 0
 $(window).on('scroll', function () {
     pxlCount = $(document).scrollTop()/30;
   	$('p.pxlCount > span').text(pxlCount);
-    $(".shape1, .shape2, .scroll-downs, .btn-flat").css({"-webkit-filter": "blur("+pxlCount+"px)","-moz-filter": "blur("+pxlCount+"px)","filter": "blur("+pxlCount+"px)" })     
+    $(".shape1, .shape2, .scroll-downs, .btn-flat, #title2, #title3").css({"-webkit-filter": "blur("+pxlCount+"px)","-moz-filter": "blur("+pxlCount+"px)","filter": "blur("+pxlCount+"px)" })     
 });
 
 $(function() {
@@ -94,6 +94,8 @@ $(document).ready(function(){
         $("#payload-cut").toggleClass("visiblex");
 		$("#payload-data").toggleClass("visiblex");
 		$("#ariane").toggleClass("blur");
+		$("#tank").toggleClass("blur");
+		$("#boosters").toggleClass("blur");
     });
 });
 $(document).ready(function(){
@@ -101,6 +103,8 @@ $(document).ready(function(){
         $("#tank-cut").toggleClass("visiblex");
 		$("#tank-data").toggleClass("visiblex");
 		$("#ariane").toggleClass("blur");
+		$("#boosters").toggleClass("blur");
+		$("#payload").toggleClass("blur");
     });
 });
 $(document).ready(function(){
@@ -108,5 +112,7 @@ $(document).ready(function(){
         $("#boosters-cut").toggleClass("visiblex");
 		$("#boosters-data").toggleClass("visiblex");
 		$("#ariane").toggleClass("blur");
+		$("#tank").toggleClass("blur");
+		$("#payload").toggleClass("blur");
     });
 });
