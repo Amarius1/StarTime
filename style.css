@@ -546,7 +546,7 @@ html{
 }
 .logo-back {
 	position:relative;
-	top: 15%;
+	top: 12%;
 }
 .counter-text {
 	min-width: 65px; text-align: center; display: inline-block; margin: 0 0px; padding: 8px 16px; background: rgba(0,0,0,0.3); 
