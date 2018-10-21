@@ -1,0 +1,65 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 20, 2018, 12:08:06 PM
+    Author     : Serban
+*/
+
+.photos { 
+        top: 0;
+        left:0;
+        right:60%;
+        position:fixed; 
+        width:60; 
+        height:30%;
+        
+       
+}
+
+.specs{
+    top:0; 
+    right: 0;
+    position: fixed;
+    width:60%;
+    height:100%;
+    overflow: auto;  
+    padding: 20px;
+/*    background-color: yellowgreen;  */
+}
+
+.about{
+    padding: 10px;
+    top:50%;
+    left:0;
+    position: fixed;
+    width:40%;
+    height:50%;
+    overflow: auto;
+/*    background-color: red;*/
+}
+
+.racheta{
+  padding: 5px;
+    width:24%;
+    height: 90% ;
+    max-width: none;  
+    z-index: 100;
+    
+    
+} 
+.hidden{
+    display: none;
+}
+.overlay{
+    position: fixed;
+    display: block;
+   
+}
+.body-gradient2 {
+  height: 2570px; /* Used to enable scrolling */
+  background: linear-gradient(180deg, #fafafa 0%, #fafafa 2%, #001028 30%, #000228 60%, #390742 90%);
+}
+
