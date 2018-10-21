@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+	<title>Star Time | Locations</title>
+	<link href="style.css" type="text/css" rel="stylesheet">
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css'>
+	<link href="style.css" type="text/css" rel="stylesheet">
+	<link href="preloader.css" type="text/css" rel="stylesheet">
+    <script src="http://www.webglearth.com/v2/api.js"></script>
+    <script>
+      function initialize() {
+        var earth = new WE.map('earth_div');
+        WE.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(earth);
+
+        var marker1 = WE.marker([62.9278549, 40.5726521]).addTo(earth);
+        marker1.bindPopup("<b>Plesetsk Cosmodrome, Russian Federation</b>", {maxWidth: 150, closeButton: true})
+
+        var marker2 = WE.marker([40.960556, 100.298333]).addTo(earth);
+        marker2.bindPopup("<b>Jiuquan, People's Republic of China</b>", {maxWidth: 150, closeButton: true})
+        
+        var marker3 = WE.marker([30.4, 130.97]).addTo(earth);
+        marker3.bindPopup("<b>Tanegashima, Japan</b>", {maxWidth: 150, closeButton: true})
+        
+        var marker4 = WE.marker([57.435833, -152.337778]).addTo(earth);
+        marker4.bindPopup("<b>Kodiak Launch Complex, Alaska, USA</b>", {maxWidth: 150, closeButton: true})
+        
+        var marker5 = WE.marker([13.7178, 80.2]).addTo(earth);
+        marker5.bindPopup("<b>Sriharikota, Republic of India</b>", {maxWidth: 150, closeButton: true})
+        
+        var marker66 = WE.marker([5.237222, -52.760556]).addTo(earth);
+        marker6.bindPopup("<b>Kourou, French Guiana</b>", {maxWidth: 150, closeButton: true})
+        
+        var marker7 = WE.marker([28.488889, -80.577778]).addTo(earth);
+        marker7.bindPopup("<b>Cape Canaveral Air Force Station</b>", {maxWidth: 150, closeButton: true})
+        
+        var marker8 = WE.marker([28.524058, -80.65085]).addTo(earth);
+        marker8.bindPopup("<b>Kennedy Space Center</b>", {maxWidth: 150, closeButton: true})
+        
+        var marker9 = WE.marker([34.732778, -120.568056]).addTo(earth);
+        marker9.bindPopup("<b>Vandenberg Air Force Base</b>", {maxWidth: 150, closeButton: true})
+        
+        var marker10 = WE.marker([29.551881, -95.098343]).addTo(earth);
+        marker10.bindPopup("<b>Space Center Houston</b>", {maxWidth: 150, closeButton: true})
+
+        var markerCustom = WE.marker([50, -9], '/img/logo-webglearth-white-100.png', 100, 24).addTo(earth);
+
+        earth.setView([51.505, 0], 1);
+      }
+    </script>
+	<!--Sirius gateway-->
+	
+	 <nav class="transparent z-depth-0">
+		<div class="nav-wrapper">
+		  <a href="index.html"  id="headx" style="position:relative; left: 8px; top: 5px; z-index:999;" class="brand-logo"><img src="Logo.png" width="230"></a>
+		  <ul style="position: relative; right: 5px; top: 1px; height: 47px;" class="rounded z-depth-4 right hide-on-med-and-down">
+			<li><a style="height: 50px;" class="mono grey lighten-4 waves-ripple waves-effect waves-blue rounded-left grey-text text-darken-4" href="launches.html">Launches</a></li>
+			<li><a style="height: 50px;" class="mono grey lighten-4 waves-ripple waves-effect waves-blue grey-text text-darken-4" href="Companies.html">Companies</a></li>
+			<li><a style="height: 50px;" class="mono grey lighten-4 waves-ripple waves-effect waves-blue grey-text text-darken-4" href="Rockets.html">Rockets</a></li>
+			<li><a style="height: 50px; position:relative; top:3px;" class="mono grey lighten-3 rounded-right grey-text text-darken-4">Locations</a></li>
+		  </ul>
+		</div>
+	  </nav>
+	<!--preloader-->
+
+	<div class="center-all" id="load-wrapper">
+	  <div class="center-all" id="loader">
+		<span class="ringFour"></span>
+		<span class="ringThree"></span>
+		<span class="colorRing"></span>
+		<span class="ringTwo"></span>
+	   
+	  </div>
+	</div>
+
+    <style>
+      html, body{padding: 0; margin: 0; background-color: black;}
+      #earth_div{top: 0; right: 0; bottom: 0; left: 0; position: absolute !important;}
+    </style>
+    <title>Launch Centers</title>
+  </head>
+  <body onload="initialize()">
+    <div id="earth_div"></div>
+	
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+	<script src="logic.js"></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js'></script>
+  </body>
+</html>
