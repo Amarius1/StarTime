@@ -94,19 +94,21 @@ body {
  .shape1 {
       display: block;
       position: absolute;
-	height: 360px !important;
-	width: 360px !important;
+		height: 360px !important;
+		width: 360px !important;
       background-image: linear-gradient(to right top, #075bda, #604dcd, #853dbc, #9e28a8, #b00091);
       border-radius: 70% 30% 30% 70% / 60% 40% 60% 40%;
+
     }
 	.shape2 {
       display: block;
       position: absolute;
-	height: 470px !important;
-	width: 470px !important;
-    background-image: linear-gradient(to right top, #730068, #670c73, #56177d, #3d2087, #042890);
+		height: 470px !important;
+		width: 470px !important;
+		background-image: linear-gradient(to right top, #730068, #670c73, #56177d, #3d2087, #042890);
       border-radius: 30% 40% 70% 30% / 40% 60% 40% 60%;
     }
+	
 .body-gradient1 {
   height: 2870px; /* Used to enable scrolling */
   background: linear-gradient(180deg, #3a0044 0%, #001028 5%, #000228 10%, #001e4c 30%, #7da4ce 51%, #fafafa 85%);

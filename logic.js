@@ -9,6 +9,7 @@ AOS.init()
 $("#container, #title0").mousemove(function(e) {
   parallaxIt(e, ".shape1", -50);
   parallaxIt(e, ".shape2", -80);
+  parallaxIt(e, ".logo-back", -40);
   parallaxIt(e, ".scroll-downs", -20);
   
 });
@@ -27,7 +28,7 @@ var pxlCount = 0
 $(window).on('scroll', function () {
     pxlCount = $(document).scrollTop()/30;
   	$('p.pxlCount > span').text(pxlCount);
-    $(".shape1, .shape2, .scroll-downs, .btn-flat, #title2, #title3").css({"-webkit-filter": "blur("+pxlCount+"px)","-moz-filter": "blur("+pxlCount+"px)","filter": "blur("+pxlCount+"px)" })     
+    $(".shape1, .shape2, .scroll-downs, .btn-flat, #title2, #title3, .logo-back").css({"-webkit-filter": "blur("+pxlCount+"px)","-moz-filter": "blur("+pxlCount+"px)","filter": "blur("+pxlCount+"px)" })     
 });
 
 $(function() {
